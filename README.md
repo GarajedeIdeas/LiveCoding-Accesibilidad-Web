@@ -3,6 +3,8 @@
 
 # Por Eduardo Iglesias Hernández, Digital Architect @ Vodafone
 
-[Accesible, que no es poco.pptx.pdf](./Accesible, que no es poco.pptx.pdf)
+## Enlace a la presentación:
+
+[presentation.pdf](./presentation.pdf)
 
 ¡Muchas gracias!
