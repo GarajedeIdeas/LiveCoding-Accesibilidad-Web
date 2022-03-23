@@ -5,7 +5,7 @@
 
 ### Por Eduardo Iglesias Hernández - 💻🏗 Digital Architect @ Vodafone
 
-## Enlace a la presentación:
+## Enlace a la presentación: (./presentation.pdf)
 
 
 ¡Muchas gracias!
