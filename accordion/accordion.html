@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Acordeon y Accesibilidad</title>
+  <link rel="stylesheet" href="./acordeon.css">
+</head>
+
+<body>
+  <header>
+    <h1>Accesible, que no es poco!!! - Acordeones</h1>
+  </header>
+  <main>
+    <h2>Ejemplo de acordeon accesible</h2>
+    <div>
+      <h3>
+        <button aria-expanded="false" class="acc-trigger" aria-controls="sect1" id="accordion1id">
+          <span class="acc-title">
+            Personal Information
+            <span class="acc-icon"></span>
+          </span>
+        </button>
+      </h3>
+      <div id="sect1" role="region" aria-labelledby="accordion1id" class="acc-panel" hidden>
+        <div>
+          <p lang="en">Do Something</p>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <p lang="en">Garaje Live Coding by Edu Iglesias</pñ>
+  </footer>
+
+  <script>
+    const trigger = document.querySelector('#accordion1id');
+    const panel = document.querySelector('#sect1')
+    trigger.addEventListener('click', () => {
+      const status = trigger.getAttribute('aria-expanded');
+      if (status === 'false') {
+        trigger.setAttribute('aria-expanded', 'true');
+        panel.removeAttribute('hidden');
+      } else {
+        trigger.setAttribute('aria-expanded', 'false');
+        panel.setAttribute('hidden', '');
+      }
+    })
+  </script>
+
+</body>
+
+</html>

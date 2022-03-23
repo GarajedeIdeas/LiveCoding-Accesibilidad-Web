@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formularios y la accesibilidad</title>
+  <link rel="stylesheet" href="./formularios.css">
+</head>
+<body>
+  
+  <header>
+    <h1>Accesible, que no es poco!! - Formularios</h1>
+  </header>
+  <main>
+    <form action="">
+      <h2>Formularios de registro</h2>
+      <fieldset>
+        <legend> Datos de contacto</legend>
+        <label for="name00">Nombre</label>
+        <input type="text" id="name00" name="name00" placeholder="Escribe tu nombre">
+        <label>
+          Apellidos
+          <input type="text" name="apellidos00" placeholder="Escribe tus apellidos separados por coma">
+        </label>
+        <input type="number" name="edad00" placeholder="Expresa tu edad en numeros" aria-label="Edad*">
+      </fieldset>
+      <fieldset>
+        <legend>Datos de contacto</legend>
+        <label for="direccion00"> Dirección </label>
+        <input type="text" placeholder="Dirección">
+        <label>
+          Código Postal
+          <input type="number" name="codigo00" min="00000" max="99999" placeholder="C.P">
+        </label>
+        <input type="text" name="localidad00" placeholder="Localidad*" aria-label="Localidad*">
+      </fieldset>
+      <button>Enviar <span class="hide--accessibility">Formulario de registro</span></button>
+    </form>
+  </main>
+  <footer>
+    <p lang="en">Garaje Live Coding by Edu Iglesias</pñ>
+  </footer>
+
+</body>
+</html>

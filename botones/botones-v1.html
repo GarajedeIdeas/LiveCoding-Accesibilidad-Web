@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="botones-v1.css">
+  <title>Accesibilidad web | ¿Botón o no botón?, esa es la cuestión </title>
+</head>
+
+<body>
+  <h1>Accesible, que no es poco!! - Botones </h1>
+  <div>
+    <img src="./pexels-600w.jpg">
+  </div>
+  <h2> ¿Botón o no botón?💀, esa es la cuestión </h2>
+  <div>
+    <button class="btn"> OPCIÓN A </button>
+    <a class="btn"> OPCIÓN B </a>
+    <p class="btn"> OPCIÓN C </p>
+  </div>
+  <output></output>
+
+  <script>
+    const options = document.querySelectorAll('.btn');
+    const output = document.querySelector('output');
+    options.forEach(opt => {
+      opt.addEventListener('click', evt => {
+        output.innerHTML = `${evt.target.innerHTML} clicked !!!`
+      })
+    })
+
+    function clearOutput() {
+      const output = document.querySelectorAll('output');
+      output.forEach(elem => elem.innerHTML = '')
+    }
+
+  </script>
+
+</body>
+
+</html>
